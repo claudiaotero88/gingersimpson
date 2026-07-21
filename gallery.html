@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gallery | Ginger Simpson - Production Photos & Headshots</title>
+  <title>Gallery | Ginger Simpson - Production Photos &amp; Headshots</title>
 
 <meta
 name="description"
@@ -21,7 +21,7 @@ content="Ginger Simpson gallery, theater photos, production photos, headshots, m
 
   <link
     rel="canonical"
-    href="https://claudiaotero88.github.io/gingersimpson/gallery.html"
+    href="https://claudiaotero88.github.io/gingersimpson/gallery"
   >
 
   <!-- Prioritize only the first visible gallery image -->
@@ -39,7 +39,7 @@ content="Ginger Simpson gallery, theater photos, production photos, headshots, m
 
 <meta
 property="og:url"
-content="https://claudiaotero88.github.io/gingersimpson/gallery.html"
+content="https://claudiaotero88.github.io/gingersimpson/gallery"
 
 >
 
@@ -103,7 +103,7 @@ content="Production photos and headshots from Ginger Simpson's theater performan
 
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- Keep the wide Romeo and Juliet image fully visible -->
+  <!-- Wide Romeo and Juliet image -->
 
   <style>
     .gallery-item--romeo {
@@ -111,10 +111,20 @@ content="Production photos and headshots from Ginger Simpson's theater performan
       aspect-ratio: 16 / 9;
     }
 
+    .gallery-item--romeo .gallery-item__img-wrap {
+      overflow: hidden;
+    }
+
     .gallery-item--romeo img {
-      object-fit: contain;
-      object-position: center;
-      background: #d6e6f7;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transform: scale(1.08);
+    }
+
+    .gallery-item--romeo:hover img {
+      transform: scale(1.12);
     }
 
     @media (max-width: 760px) {
@@ -136,12 +146,13 @@ content="Production photos and headshots from Ginger Simpson's theater performan
 
 <body>
 
-  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <!-- Navigation -->
 
   <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="nav__inner">
 
-  <a href="index.html" class="nav__logo">
+```
+  <a href="./" class="nav__logo">
     Ginger Simpson
   </a>
 
@@ -159,14 +170,14 @@ content="Production photos and headshots from Ginger Simpson's theater performan
 
   <ul class="nav__links" id="navLinks" role="list">
     <li>
-      <a href="index.html" class="nav__link">
+      <a href="./" class="nav__link">
         Home
       </a>
     </li>
 
     <li>
       <a
-        href="gallery.html"
+        href="gallery"
         class="nav__link nav__link--active"
       >
         Gallery
@@ -174,27 +185,29 @@ content="Production photos and headshots from Ginger Simpson's theater performan
     </li>
 
     <li>
-      <a href="media.html" class="nav__link">
+      <a href="media" class="nav__link">
         Media
       </a>
     </li>
 
     <li>
-      <a href="resume.html" class="nav__link">
+      <a href="resume" class="nav__link">
         Resume
       </a>
     </li>
   </ul>
 
 </div>
-    
+```
+
   </nav>
 
-  <!-- ── Page Hero ──────────────────────────────────────────── -->
+  <!-- Page Hero -->
 
   <header class="page-hero" aria-label="Gallery header">
     <div class="container">
 
+```
   <p class="page-hero__eyebrow">
     Portfolio
   </p>
@@ -208,11 +221,13 @@ content="Production photos and headshots from Ginger Simpson's theater performan
   </p>
 
 </div>
+```
 
   </header>
 
   <main class="gallery-page" aria-label="Photo gallery">
 
+```
 <section class="gallery-collage-section">
 
   <div class="container">
@@ -631,13 +646,15 @@ content="Production photos and headshots from Ginger Simpson's theater performan
     </div>
   </div>
 </section>
+```
 
   </main>
 
-  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <!-- Footer -->
 
   <footer class="footer" aria-label="Site footer">
 
+```
 <div class="container footer__inner">
 
   <p class="footer__name">
@@ -645,10 +662,10 @@ content="Production photos and headshots from Ginger Simpson's theater performan
   </p>
 
   <nav class="footer__nav" aria-label="Footer navigation">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="media.html">Media</a>
-    <a href="resume.html">Resume</a>
+    <a href="./">Home</a>
+    <a href="gallery">Gallery</a>
+    <a href="media">Media</a>
+    <a href="resume">Resume</a>
   </nav>
 
   <p class="footer__copy">
@@ -656,13 +673,13 @@ content="Production photos and headshots from Ginger Simpson's theater performan
   </p>
 
 </div>
+```
 
   </footer>
 
-  <!-- ── Lightbox (injected by main.js) ────────────────────── -->
+  <!-- Lightbox injected by main.js -->
 
   <script src="assets/js/main.js"></script>
 
 </body>
 </html>
-
