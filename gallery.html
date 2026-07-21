@@ -102,6 +102,36 @@ content="Production photos and headshots from Ginger Simpson's theater performan
   <!-- Styles -->
 
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Keep the wide Romeo and Juliet image fully visible -->
+
+  <style>
+    .gallery-item--romeo {
+      grid-column: span 2;
+      aspect-ratio: 16 / 9;
+    }
+
+    .gallery-item--romeo img {
+      object-fit: contain;
+      object-position: center;
+      background: #d6e6f7;
+    }
+
+    @media (max-width: 760px) {
+      .gallery-item--romeo {
+        grid-column: span 2;
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .gallery-item--romeo {
+        grid-column: 1;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -157,7 +187,7 @@ content="Production photos and headshots from Ginger Simpson's theater performan
   </ul>
 
 </div>
-
+    
   </nav>
 
   <!-- ── Page Hero ──────────────────────────────────────────── -->
@@ -226,9 +256,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Noises%20Off%202.jpg"
             alt="Noises Off — production photo 1"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -251,9 +280,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Noises%20Off%203.jpg"
             alt="Noises Off — production photo 2"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -276,9 +304,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/iFrankenstein%201.jpg"
             alt="iFrankenstein — photo 1"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -301,9 +328,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/iFrankenstein%202.jpg"
             alt="iFrankenstein — photo 2"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -326,9 +352,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/iFrankenstein%203.jpg"
             alt="iFrankenstein — photo 3"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -351,9 +376,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/iFrankenstein%204.jpg"
             alt="iFrankenstein — photo 4"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -376,9 +400,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/iFrankenstein%205.jpg"
             alt="iFrankenstein — photo 5"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -401,9 +424,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Six%20Characters%20in%20Search%20of%20an%20Author%201.jpg"
             alt="Six Characters in Search of an Author — photo 1"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -426,9 +448,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Six%20Characters%20in%20Search%20of%20an%20Author%202.jpg"
             alt="Six Characters in Search of an Author — photo 2"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -451,9 +472,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Six%20Characters%20in%20Search%20of%20an%20Author%203.jpg"
             alt="Six Characters in Search of an Author — photo 3"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -476,9 +496,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/On%20the%20Subject%20of%20Well-Behaved%20Women%201.jpg"
             alt="On the Subject of Well-Behaved Women — photo 1"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -501,9 +520,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/On%20the%20Subject%20of%20Well-Behaved%20Women%202.jpg"
             alt="On the Subject of Well-Behaved Women — photo 2"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -526,9 +544,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/On%20the%20Subject%20of%20Well-Behaved%20Women%203.jpg"
             alt="On the Subject of Well-Behaved Women — photo 3"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -551,9 +568,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/Seuss%201.jpg"
             alt="Seussical — production photo"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -576,9 +592,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/SLIDESHOW%20Grease.jpg"
             alt="Grease — production photo"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -601,9 +616,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/SLIDESHOW%20Seuss.jpg"
             alt="Seussical — production photo 2"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
@@ -626,9 +640,8 @@ content="Production photos and headshots from Ginger Simpson's theater performan
           <img
             src="assets/images/SLIDESHOW%20Romeo%20and%20Juliet.jpg"
             alt="Romeo and Juliet — production photo"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            fetchpriority="low"
           >
         </div>
 
